@@ -61,7 +61,7 @@
         </p>
 
         <p>
-          <strong>Agent-adjacent AI systems:</strong>
+          <strong>AI Agents System:</strong>
           More centered around the execution of a specific task, with supervised and rule-based learning mechanisms. Their planning and reasoning mechanisms are less advanced,
           showing restricted autonomy and proactivity. Moreover, the different agents utilized in the system operate independently from each other and learn and adapt within their specific domain
           (Sapkota et al., 2025).
@@ -159,6 +159,41 @@
       { repo: "https://github.com/multimodal-art-projection/AutoKaggle", extraction: "arXiv", paper: "https://arxiv.org/pdf/2410.20424", patterns: ["Example"] },
       { repo: "https://github.com/adobe-research/dynasaur", extraction: "arXiv", paper: "https://arxiv.org/pdf/2411.01747", patterns: ["Example"] },
     ];
+    // Source: RepoList(Git Search).csv (filtered: Agentic AI & not Irrelevant)
+  const agenticData = [
+    { repo: "https://github.com/google-gemini/gemini-cli", extraction: "GitHub", paper: "", patterns: ["Framework"] },
+    { repo: "https://github.com/browser-use/browser-use", extraction: "GitHub", paper: "", patterns: ["Framework"] },
+    { repo: "https://github.com/lobehub/lobe-chat", extraction: "GitHub", paper: "", patterns: ["Application"] },
+    { repo: "https://github.com/microsoft/autogen", extraction: "GitHub", paper: "", patterns: ["Multi-Agent Framework"] },
+    { repo: "https://github.com/Mintplex-Labs/anything-llm", extraction: "GitHub", paper: "", patterns: ["Application"] },
+    { repo: "https://github.com/FlowiseAI/Flowise", extraction: "GitHub", paper: "", patterns: ["Low-Code Framework"] },
+    { repo: "https://github.com/crewAIInc/crewAI", extraction: "GitHub", paper: "", patterns: ["Multi-Agent Framework"] },
+    { repo: "https://github.com/reworkd/AgentGPT", extraction: "GitHub", paper: "", patterns: ["Autonomous Agent"] },
+    { repo: "https://github.com/agno-agi/agno", extraction: "GitHub", paper: "", patterns: ["Multi-Agent Framework"] },
+    { repo: "https://github.com/feder-cr/Jobs_Applier_AI_Agent", extraction: "GitHub", paper: "", patterns: ["Vertical Agent"] },
+    { repo: "https://github.com/ComposioHQ/composio", extraction: "GitHub", paper: "", patterns: ["Tooling / SDK"] },
+    { repo: "https://github.com/CopilotKit/CopilotKit", extraction: "GitHub", paper: "", patterns: ["Agentic App Framework"] },
+    { repo: "https://github.com/block/goose", extraction: "GitHub", paper: "", patterns: ["Agent Framework"] },
+    { repo: "https://github.com/stitionai/devika", extraction: "GitHub", paper: "", patterns: ["Software Engineering Agent"] },
+    { repo: "https://github.com/bytedance/UI-TARS-desktop", extraction: "GitHub", paper: "", patterns: ["Multimodal Agent"] },
+    { repo: "https://github.com/kortix-ai/suna", extraction: "GitHub", paper: "", patterns: ["Generalist Agent"] },
+    { repo: "https://github.com/coze-dev/coze-studio", extraction: "GitHub", paper: "", patterns: ["Agent Platform"] },
+    { repo: "https://github.com/NirDiamant/GenAI_Agents", extraction: "GitHub", paper: "", patterns: ["Collection"] },
+    { repo: "https://github.com/TransformerOptimus/SuperAGI", extraction: "GitHub", paper: "", patterns: ["Autonomous Agent Framework"] },
+    { repo: "https://github.com/google/adk-python", extraction: "GitHub", paper: "", patterns: ["Toolkit"] },
+    { repo: "https://github.com/trycua/cua", extraction: "GitHub", paper: "", patterns: ["Infrastructure"] },
+    { repo: "https://github.com/bytedance/trae-agent", extraction: "GitHub", paper: "", patterns: ["Software Agent"] },
+    { repo: "https://github.com/TEN-framework/ten-framework", extraction: "GitHub", paper: "", patterns: ["Voice Agent Framework"] },
+    { repo: "https://github.com/Upsonic/Upsonic", extraction: "GitHub", paper: "", patterns: ["Agent Framework"] },
+    { repo: "https://github.com/livekit/agents", extraction: "GitHub", paper: "", patterns: ["Realtime Agent Framework"] },
+    { repo: "https://github.com/awslabs/agent-squad", extraction: "GitHub", paper: "", patterns: ["Multi-Agent Orchestration"] },
+    { repo: "https://github.com/julep-ai/julep", extraction: "GitHub", paper: "", patterns: ["Agent Platform"] },
+    { repo: "https://github.com/crestalnetwork/intentkit", extraction: "GitHub", paper: "", patterns: ["Agent Framework"] },
+    { repo: "https://github.com/kuafuai/DevOpsGPT", extraction: "GitHub", paper: "", patterns: ["DevOps Agent"] },
+    { repo: "https://github.com/alibaba/spring-ai-alibaba", extraction: "GitHub", paper: "", patterns: ["Java Agent Framework"] },
+    { repo: "https://github.com/MervinPraison/PraisonAI", extraction: "GitHub", paper: "", patterns: ["Multi-Agent Framework"] },
+    { repo: "https://github.com/GaiaNet-AI/gaianet-node", extraction: "GitHub", paper: "", patterns: ["Decentralized Agent"] },
+  ];
 
     const adjacentData = [
       { repo: "https://github.com/google/oss-fuzz-gen", extraction: "GitHub", paper: "", patterns: ["TBD"] },
