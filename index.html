@@ -287,19 +287,21 @@
         extTd.textContent = item.extraction || "-";
 
         const paperTd = document.createElement("td");
-        if (item.paper && item.paper.trim() !== "") {
-          const paperA = document.createElement("a");
-          paperA.href = item.paper;
-          paperA.target = "_blank";
-          paperA.rel = "noreferrer";
-          paperA.textContent = "paper";
-          paperTd.appendChild(paperA);
+        if (item.paper && item.paper.trim() !== "" && item.paper.trim() !== "No") {
+          paperTd.textContent = item.paper;
         } else {
           paperTd.textContent = "-";
         }
 
         const patTd = document.createElement("td");
-        patTd.textContent = Array.isArray(item.patterns) && item.patterns.length ? item.patterns.join(", ") : "-";
+        const desc = item.description;
+        if (Array.isArray(desc) && desc.length) {
+          patTd.textContent = desc.join(" ");
+        } else if (typeof desc === "string" && desc.trim() !== "") {
+          patTd.textContent = desc;
+        } else {
+          patTd.textContent = "-";
+        }
 
         tr.appendChild(repoTd);
         tr.appendChild(extTd);
@@ -366,4 +368,3 @@
   </script>
 </body>
 </html>
-  </html>
