@@ -225,11 +225,11 @@
     // If you have pattern images, list them here.
     // Example: { title: "Retrieval", file: "retrieval.png" }
     const patternImages = [
-      { title: "Architecture", file: "Architecture.png" },
+      { title: "Architecture", file: "Architecture.png", description:"test" },
       { title: "Audit", file: "Audit.png" },
       { title: "Authentication", file: "Authentication.png" },
       { title: "Cognitive", file: "Cognitive.png" },
-      { title: "Communication", file: "Communication.png" },
+      { title: "Communication", file: "Comminication.png" },
       { title: "Context-Based", file: "Context-Based.png" },
       { title: "Coordination-Cooperation", file: "Coordination-Cooperation.png" },
       { title: "Deployment", file: "Deployment.png" },
@@ -350,6 +350,30 @@
       }
     }
 
+    function openImageModal(src, title, desc) {
+      const modal = document.getElementById("img-modal");
+      const imgEl = document.getElementById("img-modal-src");
+      const titleEl = document.getElementById("img-modal-title");
+      const descEl = document.getElementById("img-modal-desc");
+
+      imgEl.src = src;
+      imgEl.alt = title || "";
+      titleEl.textContent = title || "";
+      descEl.textContent = desc || "";
+
+     modal.classList.add("is-active");
+    }
+
+    function closeImageModal() {
+      document.getElementById("img-modal").classList.remove("is-active");
+    }
+
+    document.getElementById("img-modal-close").addEventListener("click", closeImageModal);
+    document.getElementById("img-modal-bg").addEventListener("click", closeImageModal);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") closeImageModal();
+   });
+
     function renderPatternGrid() {
       const grid = document.getElementById("pattern-grid");
       const empty = document.getElementById("pattern-empty");
@@ -388,12 +412,19 @@
         title.textContent = p.title || p.file;
         cardContent.appendChild(title);
 
+        if (p.description && p.description.trim() !== "") {
+          const desc = document.createElement("p");
+          desc.className = "content is-size-7";
+          desc.textContent = p.description;
+          cardContent.appendChild(desc);
+        }
+
         card.appendChild(cardImg);
         card.appendChild(cardContent);
 
-        // Open the image in a new tab
+        // Open the image in a same tab
         card.style.cursor = "pointer";
-        card.onclick = () => window.open(img.src, "_blank", "noreferrer");
+        card.onclick = () => openImageModal(img.src, p.title || p.file, p.description || "");
 
         col.appendChild(card);
         grid.appendChild(col);
@@ -404,5 +435,26 @@
     renderRepoTable("aiagents-tbody", agentData);
     renderPatternGrid();
   </script>
+  <div class="modal" id="img-modal">
+  <div class="modal-background" id="img-modal-bg"></div>
+
+  <div class="modal-content">
+    <p class="image">
+      <img
+        id="img-modal-src"
+        src=""
+        alt=""
+        style="max-height: 85vh; object-fit: contain;"
+      />
+    </p>
+
+    <div class="box" style="margin-top: 0.75rem;">
+      <p class="title is-6" id="img-modal-title" style="margin-bottom: 0.25rem;"></p>
+      <p class="content is-size-7" id="img-modal-desc" style="margin-bottom: 0;"></p>
+    </div>
+  </div>
+
+  <button class="modal-close is-large" aria-label="close" id="img-modal-close"></button>
+</div>
 </body>
 </html>
