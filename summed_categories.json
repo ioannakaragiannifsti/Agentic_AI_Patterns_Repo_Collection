@@ -1,0 +1,978 @@
+{
+  "Github": {
+    "Architecture": {
+      "Single Agent Pattern": 95,
+      "Centralized Pattern": 1,
+      "Hierarchical Decomposition Pattern": 44,
+      "Federated pattern": 4,
+      "Custom Pattern": 106,
+      "Fully Distributed pattern": 34,
+      "Supervisor pattern": 68
+    },
+    "Audit": {
+      "Security Policy Enforcer pattern": 43,
+      "Compliance Monitoring pattern": 25,
+      "Access Tracking pattern": 0,
+      "Security Event Handler pattern": 23
+    },
+    "Authentication": {
+      "Multi Factor Verification pattern": 11,
+      "Token Authentication pattern": 65,
+      "Role Based Access pattern": 3
+    },
+    "Cognitive": {
+      "Hierarchical Decomposition pattern": 44,
+      "Tree of Thought pattern": 78,
+      "Chain of Thought pattern": 84,
+      "Context Refinement pattern": 92,
+      "Chain of Draft pattern": 86,
+      "Short Term Memory pattern": 38,
+      "Output Templating pattern": 114,
+      "Uncertainty Handling pattern": 94,
+      "Knowledge Integration pattern": 112
+    },
+    "Communication": {
+      "Full Transparency pattern": 6,
+      "Goal-Based Transparency pattern": 6,
+      "Context Aware Sharing Transparency pattern": 1,
+      "Role-Based Transparency pattern": 83,
+      "Sensitive Data Withholding Transparency pattern": 24
+    },
+    "Context-Based": {
+      "Context Switching pattern": 17,
+      "Context Inheritance pattern": 39,
+      "Context Refinement pattern": 92,
+      "Memory Consolidation pattern": 46,
+      "Context Stack pattern": 166
+    },
+    "Coordination-Cooperation": {
+      "Fully Distributed pattern": 34,
+      "Swarming pattern": 89,
+      "Role-Based Cooperation pattern": 45,
+      "Centralized pattern": 1,
+      "Round Robin pattern": 53,
+      "Voting-Based Cooperation  pattern": 52,
+      "Debate-Based Cooperation pattern": 54,
+      "Federated pattern": 4
+    },
+    "Deployment": {
+      "Infrastructure & Containerization pattern": 46,
+      "Disaster Recovery & Backup Strategies pattern": 6,
+      "CI CD Integration for LLM Systems pattern": 7,
+      "Observability & Monitoring pattern": 25,
+      "Edge vs. Cloud Deployment pattern": 3
+    },
+    "Error Handling": {
+      "Error Classifier pattern": 128,
+      "Error Recovery Chain pattern": 46,
+      "Circuit Breaker pattern": 95,
+      "Graceful Degradation Control pattern": 44
+    },
+    "Evaluation and QA": {
+      "Observability & Monitoring pattern": 25,
+      "Human Feedback pattern": 58,
+      "A/B Testing for Prompt Strategies pattern": 29,
+      "Metric Driven Refinement pattern": 4
+    },
+    "Event Driven & Asynchronous": {
+      "Asynchronous Workflow pattern": 81,
+      "Tool Agent Registry pattern": 92
+    },
+    "Explainability & Transparency": {
+      "Source Attribution pattern": 155,
+      "Confidence Disclosure pattern": 149,
+      "Human Readable Summarization pattern": 156,
+      "Chain of Thought pattern": 84,
+      "Decision Trace-Logging pattern": 45
+    },
+    "Goal Creation": {
+      "Proactive-Goal Creator pattern": 123,
+      "Passive Goal Creator pattern": 106
+    },
+    "Governance & Ethical Application": {
+      "Behavior Bounds pattern": 114,
+      "Policy Evolution & Update pattern": 12,
+      "Multimodal Guardrails pattern": 85,
+      "Explainable Compliance pattern": 74
+    },
+    "Input Modality": {
+      "Multi Input Modality pattern": 31,
+      "Single Input Modality pattern": 76
+    },
+    "Input-Output Security": {
+      "Prompt Response Optimizer pattern": 51
+    },
+    "Interaction": {
+      "Tool Chain Composition pattern": 96,
+      "Collaborative Problem Solving pattern": 159,
+      "Cross Reflection pattern": 108,
+      "Passive Goal Creator pattern": 106,
+      "Data Chunking pattern": 114,
+      "Multi Modal Integration pattern": 16,
+      "Supervisor pattern": 68,
+      "Contextual Memory pattern": 123,
+      "Progressive Disclosure pattern": 33,
+      "Data Validation pattern": 158,
+      "Intent Clarification pattern": 57,
+      "Expertise Adaptation pattern": 122,
+      "Data Transformation pattern": 131,
+      "Tool Selection pattern": 164,
+      "Prompt Response Optimizer pattern": 51,
+      "Tool Output Integration pattern": 99
+    },
+    "Main": {
+      "Tool Use pattern": 87,
+      "Planning pattern": 112,
+      "Reflection pattern": 117,
+      "Multi-Agent Collaboration pattern": 77
+    },
+    "Memory": {
+      "Memory Pruning pattern": 40,
+      "Information Distillation pattern": 18,
+      "Memory Federation pattern": 54,
+      "Semantic Compression pattern": 4,
+      "Context Refresh pattern": 38,
+      "Hierarchical Memory Store pattern": 132,
+      "Episodic Memory pattern": 39,
+      "Context Window Manager pattern": 79
+    },
+    "Memory Type": {
+      "Long-Term Memory pattern": 48,
+      "Memory Type pattern": 0,
+      "Selective Forgetting pattern": 11,
+      "Short-Term Memory pattern": 38
+    },
+    "Model Composition": {
+      "Single Model pattern": 17,
+      "Multi Model pattern": 16
+    },
+    "Monitoring & Adaptation": {
+      "Adaptive Controller pattern": 2,
+      "Learning Feedback pattern": 5,
+      "Behavior Monitoring pattern": 24
+    },
+    "Multi-Agent Collaboration": {
+      "Custom pattern": 106,
+      "Network pattern": 51
+    },
+    "Orchestration": {
+      "Hierarchical Decomposition pattern": 44,
+      "Supervisor pattern": 68
+    },
+    "Output Validation": {
+      "Prompt Response Optimizer pattern": 51
+    },
+    "Performance & Optimization": {
+      "Response Caching & Reuse pattern": 5,
+      "Dynamic Subscription & Scaling pattern": 103,
+      "Load Balancing & Rate Limiting Strategies pattern": 35
+    },
+    "Planning": {
+      "Single-Path Planning pattern": 104,
+      "Internal Planner pattern": 27,
+      "Multi-Path Planning pattern": 77,
+      "External Pattern": 80
+    },
+    "Privacy": {
+      "Consent Management pattern": 5,
+      "Information Masking pattern": 62
+    },
+    "Process Management": {
+      "Checkpoint Recovery pattern": 83,
+      "Progress Monitor pattern": 135
+    },
+    "Prompt Pattern": {
+      "Incremental Model Querying pattern": 115,
+      "One Shot Model Querying pattern": 126
+    },
+    "Recovery Strategy": {
+      "Progressive Recovery pattern": 13,
+      "Graceful Degradation Control pattern": 44,
+      "Checkpoint Recovery pattern": 83
+    },
+    "Reflection": {
+      "Chain of Thought pattern": 84,
+      "Cross Reflection pattern": 108,
+      "Tree of Thought pattern": 78,
+      "Human Feedback pattern": 58,
+      "Self Reflection pattern": 68,
+      "Environmental Feedback pattern": 74
+    },
+    "Resource Management": {
+      "Context Window Manager pattern": 79,
+      "Parallel Task Coordinator pattern": 106,
+      "Token Budget Manager pattern": 151
+    },
+    "Role-Based": {
+      "Agent as a Coordinator pattern": 54,
+      "Agent as a Worker pattern": 54
+    },
+    "Security": {
+      "Prompt Response Optimizer pattern": 51
+    },
+    "Storage and Retrieval": {
+      "Embeddings pattern": 100,
+      "Retrieval Augmented Generation pattern": 58,
+      "Natural Language Memory pattern": 43,
+      "Structured List pattern": 41,
+      "Database pattern": 86,
+      "Memory Reflection pattern": 95
+    },
+    "Tool Use": {
+      "Agent Adapter pattern": 99,
+      "Internal Knowledge pattern": 97,
+      "Tool Agent Registry pattern": 92,
+      "External pattern": 80,
+      "Internal Planner pattern": 27,
+      "External Tools pattern": 140
+    },
+    "Workflow": {
+      "Parallelization pattern": 92,
+      "Routing pattern": 110,
+      "Single-Path Planning pattern": 104,
+      "Fully Distributed pattern": 34,
+      "Hierarchical Decomposition pattern": 44,
+      "Federated pattern": 4,
+      "Human Feedback pattern": 58,
+      "Supervisor pattern": 68,
+      "Centralized pattern": 1,
+      "Multi-Path Planning pattern": 77,
+      "Cross reflection pattern": 108,
+      "Sequential pattern": 47,
+      "Dynamic Subscription & Scaling pattern": 103,
+      "Asynchronous Workflow pattern": 81
+    }
+  },
+  "arXiv": {
+    "Architecture": {
+      "Single Agent Pattern": 1230,
+      "Centralized Pattern": 0,
+      "Hierarchical Decomposition Pattern": 398,
+      "Federated pattern": 2,
+      "Custom Pattern": 1272,
+      "Fully Distributed pattern": 57,
+      "Supervisor pattern": 1040
+    },
+    "Audit": {
+      "Security Policy Enforcer pattern": 165,
+      "Compliance Monitoring pattern": 64,
+      "Access Tracking pattern": 50,
+      "Security Event Handler pattern": 77
+    },
+    "Authentication": {
+      "Multi Factor Verification pattern": 41,
+      "Token Authentication pattern": 203,
+      "Role Based Access pattern": 15
+    },
+    "Cognitive": {
+      "Hierarchical Decomposition pattern": 398,
+      "Tree of Thought pattern": 778,
+      "Chain of Thought pattern": 965,
+      "Context Refinement pattern": 1234,
+      "Chain of Draft pattern": 1053,
+      "Short Term Memory pattern": 185,
+      "Output Templating pattern": 1107,
+      "Uncertainty Handling pattern": 1189,
+      "Knowledge Integration pattern": 1244
+    },
+    "Communication": {
+      "Full Transparency pattern": 31,
+      "Goal-Based Transparency pattern": 20,
+      "Context Aware Sharing Transparency pattern": 12,
+      "Role-Based Transparency pattern": 1206,
+      "Sensitive Data Withholding Transparency pattern": 33
+    },
+    "Context-Based": {
+      "Context Switching pattern": 58,
+      "Context Inheritance pattern": 295,
+      "Context Refinement pattern": 1234,
+      "Memory Consolidation pattern": 471,
+      "Context Stack pattern": 1184
+    },
+    "Coordination-Cooperation": {
+      "Fully Distributed pattern": 57,
+      "Swarming pattern": 1236,
+      "Role-Based Cooperation pattern": 339,
+      "Centralized pattern": 0,
+      "Round Robin pattern": 551,
+      "Voting-Based Cooperation  pattern": 792,
+      "Debate-Based Cooperation pattern": 891,
+      "Federated pattern": 2
+    },
+    "Deployment": {
+      "Infrastructure & Containerization pattern": 245,
+      "Disaster Recovery & Backup Strategies pattern": 2,
+      "CI CD Integration for LLM Systems pattern": 59,
+      "Observability & Monitoring pattern": 144,
+      "Edge vs. Cloud Deployment pattern": 10
+    },
+    "Error Handling": {
+      "Error Classifier pattern": 1203,
+      "Error Recovery Chain pattern": 380,
+      "Circuit Breaker pattern": 1018,
+      "Graceful Degradation Control pattern": 879
+    },
+    "Evaluation and QA": {
+      "Observability & Monitoring pattern": 144,
+      "Human Feedback pattern": 791,
+      "A/B Testing for Prompt Strategies pattern": 648,
+      "Metric Driven Refinement pattern": 507
+    },
+    "Event Driven & Asynchronous": {
+      "Asynchronous Workflow pattern": 977,
+      "Tool Agent Registry pattern": 1006
+    },
+    "Explainability & Transparency": {
+      "Source Attribution pattern": 1256,
+      "Confidence Disclosure pattern": 1283,
+      "Human Readable Summarization pattern": 0,
+      "Chain of Thought pattern": 1264,
+      "Decision Trace-Logging pattern": 862
+    },
+    "Goal Creation": {
+      "Proactive-Goal Creator pattern": 1313,
+      "Passive Goal Creator pattern": 1201
+    },
+    "Governance & Ethical Application": {
+      "Behavior Bounds pattern": 1302,
+      "Policy Evolution & Update pattern": 171,
+      "Multimodal Guardrails pattern": 1169,
+      "Explainable Compliance pattern": 1083
+    },
+    "Input Modality": {
+      "Multi Input Modality pattern": 274,
+      "Single Input Modality pattern": 782
+    },
+    "Input-Output Security": {
+      "Prompt Response Optimizer pattern": 841
+    },
+    "Interaction": {
+      "Tool Chain Composition pattern": 1133,
+      "Collaborative Problem Solving pattern": 1248,
+      "Cross Reflection pattern": 1196,
+      "Passive Goal Creator pattern": 1201,
+      "Data Chunking pattern": 1219,
+      "Multi Modal Integration pattern": 78,
+      "Supervisor pattern": 1040,
+      "Contextual Memory pattern": 1153,
+      "Progressive Disclosure pattern": 311,
+      "Data Validation pattern": 1285,
+      "Intent Clarification pattern": 968,
+      "Expertise Adaptation pattern": 1248,
+      "Data Transformation pattern": 1139,
+      "Tool Selection pattern": 1257,
+      "Prompt Response Optimizer pattern": 841,
+      "Tool Output Integration pattern": 1116
+    },
+    "Main": {
+      "Tool Use pattern": 1095,
+      "Planning pattern": 1137,
+      "Reflection pattern": 1231,
+      "Multi-Agent Collaboration pattern": 1108
+    },
+    "Memory": {
+      "Memory Pruning pattern": 638,
+      "Information Distillation pattern": 380,
+      "Memory Federation pattern": 918,
+      "Semantic Compression pattern": 117,
+      "Context Refresh pattern": 255,
+      "Hierarchical Memory Store pattern": 1177,
+      "Episodic Memory pattern": 300,
+      "Context Window Manager pattern": 1096
+    },
+    "Memory Type": {
+      "Long-Term Memory pattern": 309,
+      "Memory Type pattern": 0,
+      "Selective Forgetting pattern": 32,
+      "Short-Term Memory pattern": 185
+    },
+    "Model Composition": {
+      "Single Model pattern": 8,
+      "Multi Model pattern": 111
+    },
+    "Monitoring & Adaptation": {
+      "Adaptive Controller pattern": 22,
+      "Learning Feedback pattern": 11,
+      "Behavior Monitoring pattern": 356
+    },
+    "Multi-Agent Collaboration": {
+      "Custom pattern": 1272,
+      "Network pattern": 595
+    },
+    "Orchestration": {
+      "Hierarchical Decomposition pattern": 398,
+      "Supervisor pattern": 1040
+    },
+    "Output Validation": {
+      "Prompt Response Optimizer pattern": 841
+    },
+    "Performance & Optimization": {
+      "Response Caching & Reuse pattern": 3,
+      "Dynamic Subscription & Scaling pattern": 1220,
+      "Load Balancing & Rate Limiting Strategies pattern": 137
+    },
+    "Planning": {
+      "Single-Path Planning pattern": 1093,
+      "Internal Planner pattern": 169,
+      "Multi-Path Planning pattern": 1050,
+      "External Pattern": 1057
+    },
+    "Privacy": {
+      "Consent Management pattern": 7,
+      "Information Masking pattern": 91
+    },
+    "Process Management": {
+      "Checkpoint Recovery pattern": 1157,
+      "Progress Monitor pattern": 1258
+    },
+    "Prompt Pattern": {
+      "Incremental Model Querying pattern": 1231,
+      "One Shot Model Querying pattern": 1206
+    },
+    "Recovery Strategy": {
+      "Progressive Recovery pattern": 311,
+      "Graceful Degradation Control pattern": 879,
+      "Checkpoint Recovery pattern": 1157
+    },
+    "Reflection": {
+      "Chain of Thought pattern": 965,
+      "Cross Reflection pattern": 1196,
+      "Tree of Thought pattern": 778,
+      "Human Feedback pattern": 791,
+      "Self Reflection pattern": 916,
+      "Environmental Feedback pattern": 1097
+    },
+    "Resource Management": {
+      "Context Window Manager pattern": 1096,
+      "Parallel Task Coordinator pattern": 1203,
+      "Token Budget Manager pattern": 1180
+    },
+    "Role-Based": {
+      "Agent as a Coordinator pattern": 505,
+      "Agent as a Worker pattern": 433
+    },
+    "Security": {
+      "Prompt Response Optimizer pattern": 841
+    },
+    "Storage and Retrieval": {
+      "Embeddings pattern": 1083,
+      "Retrieval Augmented Generation pattern": 1226,
+      "Natural Language Memory pattern": 644,
+      "Structured List pattern": 401,
+      "Database pattern": 745,
+      "Memory Reflection pattern": 1042
+    },
+    "Tool Use": {
+      "Agent Adapter pattern": 1273,
+      "Internal Knowledge pattern": 1122,
+      "Tool Agent Registry pattern": 1006,
+      "External pattern": 1057,
+      "Internal Planner pattern": 169,
+      "External Tools pattern": 1212
+    },
+    "Workflow": {
+      "Parallelization pattern": 1187,
+      "Routing pattern": 1253,
+      "Single-Path Planning pattern": 1093,
+      "Fully Distributed pattern": 57,
+      "Hierarchical Decomposition pattern": 398,
+      "Federated pattern": 2,
+      "Human Feedback pattern": 791,
+      "Supervisor pattern": 1040,
+      "Centralized pattern": 0,
+      "Multi-Path Planning pattern": 1050,
+      "Cross reflection pattern": 1196,
+      "Sequential pattern": 941,
+      "Dynamic Subscription & Scaling pattern": 1220,
+      "Asynchronous Workflow pattern": 977
+    }
+  },
+  "Forward": {
+    "Architecture": {
+      "Single Agent Pattern": 469,
+      "Centralized Pattern": 0,
+      "Hierarchical Decomposition Pattern": 117,
+      "Federated pattern": 1,
+      "Custom Pattern": 543,
+      "Fully Distributed pattern": 43,
+      "Supervisor pattern": 378
+    },
+    "Audit": {
+      "Security Policy Enforcer pattern": 23,
+      "Compliance Monitoring pattern": 1,
+      "Access Tracking pattern": 0,
+      "Security Event Handler pattern": 1
+    },
+    "Authentication": {
+      "Multi Factor Verification pattern": 3,
+      "Token Authentication pattern": 137,
+      "Role Based Access pattern": 14
+    },
+    "Cognitive": {
+      "Hierarchical Decomposition pattern": 117,
+      "Tree of Thought pattern": 267,
+      "Chain of Thought pattern": 379,
+      "Context Refinement pattern": 515,
+      "Chain of Draft pattern": 415,
+      "Short Term Memory pattern": 67,
+      "Output Templating pattern": 509,
+      "Uncertainty Handling pattern": 533,
+      "Knowledge Integration pattern": 541
+    },
+    "Communication": {
+      "Full Transparency pattern": 15,
+      "Goal-Based Transparency pattern": 10,
+      "Context Aware Sharing Transparency pattern": 1,
+      "Role-Based Transparency pattern": 468,
+      "Sensitive Data Withholding Transparency pattern": 3
+    },
+    "Context-Based": {
+      "Context Switching pattern": 28,
+      "Context Inheritance pattern": 145,
+      "Context Refinement pattern": 515,
+      "Memory Consolidation pattern": 235,
+      "Context Stack pattern": 555
+    },
+    "Coordination-Cooperation": {
+      "Fully Distributed pattern": 43,
+      "Swarming pattern": 485,
+      "Role-Based Cooperation pattern": 89,
+      "Centralized pattern": 0,
+      "Round Robin pattern": 237,
+      "Voting-Based Cooperation  pattern": 274,
+      "Debate-Based Cooperation pattern": 367,
+      "Federated pattern": 1
+    },
+    "Deployment": {
+      "Infrastructure & Containerization pattern": 111,
+      "Disaster Recovery & Backup Strategies pattern": 1,
+      "CI CD Integration for LLM Systems pattern": 15,
+      "Observability & Monitoring pattern": 41,
+      "Edge vs. Cloud Deployment pattern": 1
+    },
+    "Error Handling": {
+      "Error Classifier pattern": 542,
+      "Error Recovery Chain pattern": 122,
+      "Circuit Breaker pattern": 423,
+      "Graceful Degradation Control pattern": 323
+    },
+    "Evaluation and QA": {
+      "Observability & Monitoring pattern": 41,
+      "Human Feedback pattern": 343,
+      "A/B Testing for Prompt Strategies pattern": 260,
+      "Metric Driven Refinement pattern": 131
+    },
+    "Event Driven & Asynchronous": {
+      "Asynchronous Workflow pattern": 374,
+      "Tool Agent Registry pattern": 327
+    },
+    "Explainability & Transparency": {
+      "Source Attribution pattern": 560,
+      "Confidence Disclosure pattern": 556,
+      "Human Readable Summarization pattern": 567,
+      "Chain of Thought pattern": 379,
+      "Decision Trace-Logging pattern": 359
+    },
+    "Goal Creation": {
+      "Proactive-Goal Creator pattern": 525,
+      "Passive Goal Creator pattern": 505
+    },
+    "Governance & Ethical Application": {
+      "Behavior Bounds pattern": 547,
+      "Policy Evolution & Update pattern": 15,
+      "Multimodal Guardrails pattern": 460,
+      "Explainable Compliance pattern": 482
+    },
+    "Input Modality": {
+      "Multi Input Modality pattern": 76,
+      "Single Input Modality pattern": 298
+    },
+    "Input-Output Security": {
+      "Prompt Response Optimizer pattern": 327
+    },
+    "Interaction": {
+      "Tool Chain Composition pattern": 454,
+      "Collaborative Problem Solving pattern": 610,
+      "Cross Reflection pattern": 501,
+      "Passive Goal Creator pattern": 505,
+      "Data Chunking pattern": 513,
+      "Multi Modal Integration pattern": 23,
+      "Supervisor pattern": 378,
+      "Contextual Memory pattern": 515,
+      "Progressive Disclosure pattern": 151,
+      "Data Validation pattern": 565,
+      "Intent Clarification pattern": 388,
+      "Expertise Adaptation pattern": 568,
+      "Data Transformation pattern": 549,
+      "Tool Selection pattern": 573,
+      "Prompt Response Optimizer pattern": 327,
+      "Tool Output Integration pattern": 497
+    },
+    "Main": {
+      "Tool Use pattern": 412,
+      "Planning pattern": 489,
+      "Reflection pattern": 556,
+      "Multi-Agent Collaboration pattern": 389
+    },
+    "Memory": {
+      "Memory Pruning pattern": 325,
+      "Information Distillation pattern": 176,
+      "Memory Federation pattern": 425,
+      "Semantic Compression pattern": 52,
+      "Context Refresh pattern": 96,
+      "Hierarchical Memory Store pattern": 511,
+      "Episodic Memory pattern": 146,
+      "Context Window Manager pattern": 430
+    },
+    "Memory Type": {
+      "Long-Term Memory pattern160": 0,
+      "Memory Type pattern": 0,
+      "Selective Forgetting pattern": 13,
+      "Short-Term Memory pattern": 67
+    },
+    "Model Composition": {
+      "Single Model pattern": 5,
+      "Multi Model pattern": 29
+    },
+    "Monitoring & Adaptation": {
+      "Adaptive Controller pattern": 7,
+      "Learning Feedback pattern": 1,
+      "Behavior Monitoring pattern": 104
+    },
+    "Multi-Agent Collaboration": {
+      "Custom pattern": 543,
+      "Network pattern": 219
+    },
+    "Orchestration": {
+      "Hierarchical Decomposition pattern": 117,
+      "Supervisor pattern": 378
+    },
+    "Output Validation": {
+      "Prompt Response Optimizer pattern": 327
+    },
+    "Performance & Optimization": {
+      "Response Caching & Reuse pattern": 1,
+      "Dynamic Subscription & Scaling pattern": 452,
+      "Load Balancing & Rate Limiting Strategies pattern": 30
+    },
+    "Planning": {
+      "Single-Path Planning pattern": 420,
+      "Internal Planner pattern": 56,
+      "Multi-Path Planning pattern": 380,
+      "External Pattern": 401
+    },
+    "Privacy": {
+      "Consent Management pattern": 0,
+      "Information Masking pattern": 10
+    },
+    "Process Management": {
+      "Checkpoint Recovery pattern": 438,
+      "Progress Monitor pattern": 503
+    },
+    "Prompt Pattern": {
+      "Incremental Model Querying pattern": 491,
+      "One Shot Model Querying pattern": 498
+    },
+    "Recovery Strategy": {
+      "Progressive Recovery pattern": 36,
+      "Graceful Degradation Control pattern": 323,
+      "Checkpoint Recovery pattern": 438
+    },
+    "Reflection": {
+      "Chain of Thought pattern": 379,
+      "Cross Reflection pattern": 501,
+      "Tree of Thought pattern": 267,
+      "Human Feedback pattern": 343,
+      "Self Reflection pattern": 373,
+      "Environmental Feedback pattern": 406
+    },
+    "Resource Management": {
+      "Context Window Manager pattern": 430,
+      "Parallel Task Coordinator pattern": 456,
+      "Token Budget Manager pattern": 524
+    },
+    "Role-Based": {
+      "Agent as a Coordinator pattern": 187,
+      "Agent as a Worker pattern": 166
+    },
+    "Security": {
+      "Prompt Response Optimizer pattern": 327
+    },
+    "Storage and Retrieval": {
+      "Embeddings pattern": 518,
+      "Retrieval Augmented Generation pattern": 476,
+      "Natural Language Memory pattern": 295,
+      "Structured List pattern": 181,
+      "Database pattern": 330,
+      "Memory Reflection pattern": 455
+    },
+    "Tool Use": {
+      "Agent Adapter pattern": 544,
+      "Internal Knowledge pattern": 508,
+      "Tool Agent Registry pattern": 327,
+      "External pattern": 401,
+      "Internal Planner pattern": 56,
+      "External Tools pattern": 511
+    },
+    "Workflow": {
+      "Parallelization pattern": 515,
+      "Routing pattern": 535,
+      "Single-Path Planning pattern": 420,
+      "Fully Distributed pattern": 43,
+      "Hierarchical Decomposition pattern": 117,
+      "Federated pattern": 1,
+      "Human Feedback pattern": 343,
+      "Supervisor pattern": 378,
+      "Centralized pattern": 0,
+      "Multi-Path Planning pattern": 380,
+      "Cross reflection pattern": 501,
+      "Sequential pattern": 331,
+      "Dynamic Subscription & Scaling pattern": 452,
+      "Asynchronous Workflow pattern": 374
+    }
+  },
+  "Backward": {
+    "Architecture": {
+      "Single Agent Pattern": 268,
+      "Centralized Pattern": 0,
+      "Hierarchical Decomposition Pattern": 70,
+      "Federated pattern": 0,
+      "Custom Pattern": 271,
+      "Fully Distributed pattern": 4,
+      "Supervisor pattern": 186
+    },
+    "Audit": {
+      "Security Policy Enforcer pattern": 2,
+      "Compliance Monitoring pattern": 0,
+      "Access Tracking pattern": 0,
+      "Security Event Handler pattern": 0
+    },
+    "Authentication": {
+      "Multi Factor Verification pattern": 0,
+      "Token Authentication pattern": 63,
+      "Role Based Access pattern": 2
+    },
+    "Cognitive": {
+      "Hierarchical Decomposition pattern": 70,
+      "Tree of Thought pattern": 163,
+      "Chain of Thought pattern": 194,
+      "Context Refinement pattern": 308,
+      "Chain of Draft pattern": 225,
+      "Short Term Memory pattern": 29,
+      "Output Templating pattern": 263,
+      "Uncertainty Handling pattern": 319,
+      "Knowledge Integration pattern": 301
+    },
+    "Communication": {
+      "Full Transparency pattern": 5,
+      "Goal-Based Transparency pattern": 0,
+      "Context Aware Sharing Transparency pattern": 0,
+      "Role-Based Transparency pattern": 208,
+      "Sensitive Data Withholding Transparency pattern": 2
+    },
+    "Context-Based": {
+      "Context Switching pattern": 10,
+      "Context Inheritance pattern": 42,
+      "Context Refinement pattern": 308,
+      "Memory Consolidation pattern": 118,
+      "Context Stack pattern": 307
+    },
+    "Coordination-Cooperation": {
+      "Fully Distributed pattern": 4,
+      "Swarming pattern": 255,
+      "Role-Based Cooperation pattern": 73,
+      "Centralized pattern": 0,
+      "Round Robin pattern": 104,
+      "Voting-Based Cooperation  pattern": 182,
+      "Debate-Based Cooperation pattern": 193,
+      "Federated pattern": 0
+    },
+    "Deployment": {
+      "Infrastructure & Containerization pattern": 50,
+      "Disaster Recovery & Backup Strategies pattern": 2,
+      "CI CD Integration for LLM Systems pattern": 8,
+      "Observability & Monitoring pattern": 20,
+      "Edge vs. Cloud Deployment pattern": 1
+    },
+    "Error Handling": {
+      "Error Classifier pattern": 323,
+      "Error Recovery Chain pattern": 67,
+      "Circuit Breaker pattern": 222,
+      "Graceful Degradation Control pattern": 176
+    },
+    "Evaluation and QA": {
+      "Observability & Monitoring pattern": 20,
+      "Human Feedback pattern": 188,
+      "A/B Testing for Prompt Strategies pattern": 123,
+      "Metric Driven Refinement pattern": 66
+    },
+    "Event Driven & Asynchronous": {
+      "Asynchronous Workflow pattern": 126,
+      "Tool Agent Registry pattern": 184
+    },
+    "Explainability & Transparency": {
+      "Source Attribution pattern": 272,
+      "Confidence Disclosure pattern": 276,
+      "Human Readable Summarization pattern": 277,
+      "Chain of Thought pattern": 194,
+      "Decision Trace-Logging pattern": 220
+    },
+    "Goal Creation": {
+      "Proactive-Goal Creator pattern": 287,
+      "Passive Goal Creator pattern": 312
+    },
+    "Governance & Ethical Application": {
+      "Behavior Bounds pattern": 294,
+      "Policy Evolution & Update pattern": 5,
+      "Multimodal Guardrails pattern": 174,
+      "Explainable Compliance pattern": 171
+    },
+    "Input Modality": {
+      "Multi Input Modality pattern": 53,
+      "Single Input Modality pattern": 153
+    },
+    "Input-Output Security": {
+      "Prompt Response Optimizer pattern": 131
+    },
+    "Interaction": {
+      "Tool Chain Composition pattern": 299,
+      "Collaborative Problem Solving pattern": 304,
+      "Cross Reflection pattern": 348,
+      "Passive Goal Creator pattern": 312,
+      "Data Chunking pattern": 262,
+      "Multi Modal Integration pattern": 11,
+      "Supervisor pattern": 186,
+      "Contextual Memory pattern": 351,
+      "Progressive Disclosure pattern": 73,
+      "Data Validation pattern": 269,
+      "Intent Clarification pattern": 214,
+      "Expertise Adaptation pattern": 323,
+      "Data Transformation pattern": 253,
+      "Tool Selection pattern": 321,
+      "Prompt Response Optimizer pattern": 131,
+      "Tool Output Integration pattern": 352
+    },
+    "Main": {
+      "Tool Use pattern": 246,
+      "Planning pattern": 340,
+      "Reflection pattern": 321,
+      "Multi-Agent Collaboration pattern": 216
+    },
+    "Memory": {
+      "Memory Pruning pattern": 159,
+      "Information Distillation pattern": 79,
+      "Memory Federation pattern": 216,
+      "Semantic Compression pattern": 22,
+      "Context Refresh pattern": 60,
+      "Hierarchical Memory Store pattern": 325,
+      "Episodic Memory pattern": 59,
+      "Context Window Manager pattern": 216
+    },
+    "Memory Type": {
+      "Long-Term Memory pattern": 78,
+      "Memory Type pattern": 0,
+      "Selective Forgetting pattern": 9,
+      "Short-Term Memory pattern": 29
+    },
+    "Model Composition": {
+      "Single Model pattern": 1,
+      "Multi Model pattern": 15
+    },
+    "Monitoring & Adaptation": {
+      "Adaptive Controller pattern": 1,
+      "Learning Feedback pattern": 2,
+      "Behavior Monitoring pattern": 42
+    },
+    "Multi-Agent Collaboration": {
+      "Custom pattern": 271,
+      "Network pattern": 93
+    },
+    "Orchestration": {
+      "Hierarchical Decomposition pattern": 70,
+      "Supervisor pattern": 185
+    },
+    "Output Validation": {
+      "Prompt Response Optimizer pattern": 131
+    },
+    "Performance & Optimization": {
+      "Response Caching & Reuse pattern": 1,
+      "Dynamic Subscription & Scaling pattern": 262,
+      "Load Balancing & Rate Limiting Strategies pattern": 15
+    },
+    "Planning": {
+      "Single-Path Planning pattern": 306,
+      "Internal Planner pattern": 43,
+      "Multi-Path Planning pattern": 282,
+      "External Pattern": 220
+    },
+    "Privacy": {
+      "Consent Management pattern": 0,
+      "Information Masking pattern": 6
+    },
+    "Process Management": {
+      "Checkpoint Recovery pattern": 235,
+      "Progress Monitor pattern": 258
+    },
+    "Prompt Pattern": {
+      "Incremental Model Querying pattern": 327,
+      "One Shot Model Querying pattern": 327
+    },
+    "Recovery Strategy": {
+      "Progressive Recovery pattern": 17,
+      "Graceful Degradation Control pattern": 176,
+      "Checkpoint Recovery pattern": 235
+    },
+    "Reflection": {
+      "Chain of Thought pattern": 194,
+      "Cross Reflection pattern": 348,
+      "Tree of Thought pattern": 163,
+      "Human Feedback pattern": 188,
+      "Self Reflection pattern": 260,
+      "Environmental Feedback pattern": 235
+    },
+    "Resource Management": {
+      "Context Window Manager pattern": 216,
+      "Parallel Task Coordinator pattern": 171,
+      "Token Budget Manager pattern": 287
+    },
+    "Role-Based": {
+      "Agent as a Coordinator pattern": 108,
+      "Agent as a Worker pattern": 88
+    },
+    "Security": {
+      "Prompt Response Optimizer pattern": 131
+    },
+    "Storage and Retrieval": {
+      "Embeddings pattern": 252,
+      "Retrieval Augmented Generation pattern": 194,
+      "Natural Language Memory pattern": 174,
+      "Structured List pattern": 55,
+      "Database pattern": 151,
+      "Memory Reflection pattern": 275
+    },
+    "Tool Use": {
+      "Agent Adapter pattern": 308,
+      "Internal Knowledge pattern": 297,
+      "Tool Agent Registry pattern": 184,
+      "External pattern": 220,
+      "Internal Planner pattern": 43,
+      "External Tools pattern": 286
+    },
+    "Workflow": {
+      "Parallelization pattern": 273,
+      "Routing pattern": 231,
+      "Single-Path Planning pattern": 306,
+      "Fully Distributed pattern": 4,
+      "Hierarchical Decomposition pattern": 70,
+      "Federated pattern": 0,
+      "Human Feedback pattern": 188,
+      "Supervisor pattern": 186,
+      "Centralized pattern": 0,
+      "Multi-Path Planning pattern": 282,
+      "Cross reflection pattern": 348,
+      "Sequential pattern": 214,
+      "Dynamic Subscription & Scaling pattern": 262,
+      "Asynchronous Workflow pattern": 126
+    }
+  }
+}
