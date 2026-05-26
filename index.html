@@ -49,7 +49,7 @@
   </section>
 
   <section class="section" id="browse">
-    <div class="container is-max-desktop">
+    <div class="container is-fluid">
       <div class="content">
         <h2 class="title is-3">Definitions</h2>
 
@@ -77,13 +77,14 @@
   </section>
 
   <section class="section" id="agentic">
-    <div class="container is-max-desktop">
+    <div class="container is-fluid">
       <div class="content">
         <h2 class="title is-3">Agentic AI repositories</h2>
         <div class="table-container">
           <table class="table is-striped is-hoverable is-fullwidth">
             <thead>
               <tr>
+                <th>#</th>
                 <th>GitHub Repository</th>
                 <th>Way of Extraction</th>
                 <th>Paper (If it exists)</th>
@@ -105,6 +106,7 @@
           <table class="table is-striped is-hoverable is-fullwidth">
             <thead>
               <tr>
+                <th>#</th>
                 <th>GitHub Repository</th>
                 <th>Way of Extraction</th>
                 <th>Paper (If it exists)</th>
@@ -461,8 +463,12 @@
     function renderRepoTable(tbodyId, rows) {
       const tbody = document.getElementById(tbodyId);
       tbody.innerHTML = "";
-      for (const item of rows) {
+      rows.forEach((item, index) => {
         const tr = document.createElement("tr");
+        const numberTd = document.createElement("td");
+        numberTd.textContent = index + 1;
+        numberTd.style.fontWeight = "600";
+        numberTd.style.textAlign = "center";
 
         const repoTd = document.createElement("td");
         const repoA = document.createElement("a");
@@ -492,13 +498,14 @@
           patTd.textContent = "-";
         }
 
+        tr.appendChild(numberTd);
         tr.appendChild(repoTd);
         tr.appendChild(extTd);
         tr.appendChild(paperTd);
         tr.appendChild(patTd);
 
         tbody.appendChild(tr);
-      }
+      });
     }
 
     let zoomScale = 1;
